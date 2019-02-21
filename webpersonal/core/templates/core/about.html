@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+
+{% block titile %} Contenido {% endblock %} 
+
+{% block background %} {% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block header %}
+    <h1>Sobre mi</h1>
+    <span class="subheading">Biografía</span>
+{% endblock%}
+
+{% block content %} 
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/me.jpeg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8 ">
+        <h2 class="section-heading">Alan Alvarez</h2>
+        <p>Estudiante de Ingeniería en Sistemas Computacionales de la División de Ingenierías Campus Irapuato Salamanca.</p>
+        <p>Edad: 20 años.</p>
+
+    </div>
+</div>
+{% endblock %}
